@@ -5,9 +5,9 @@ const Home = ({ members }) => {
   const handleLink = (member) => {
     let output = ``;
     if (member.type === "pj") {
-      output = `/company/${member.name}`;
+      output = `/company/${member.id}`;
     } else {
-      output = `/customer/${member.name}`;
+      output = `/customer/${member.id}`;
     }
     return output;
   };

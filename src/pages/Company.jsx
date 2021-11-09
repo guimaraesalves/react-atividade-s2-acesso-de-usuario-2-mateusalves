@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 
 function Company({ members }) {
   const params = useParams();
-  const member = members.find(({ name }) => name === params.id);
+  const member = members.find(({ id }) => id === params.id);
 
   return (
     <div>
